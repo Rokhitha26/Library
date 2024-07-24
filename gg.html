@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google-like Search Bar</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    .search-container {
+        margin: 50px auto;
+        width: 500px;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .search-input {
+        width: calc(100% - 40px);
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .search-button {
+        width: 40px;
+        height: 40px;
+        background-color: #4CAF50;
+        color: #da6767;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button type="submit" class="search-button">&#128269;</button>
+    </div>
+</body>
+</html>

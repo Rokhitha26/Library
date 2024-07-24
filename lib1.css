@@ -1,0 +1,122 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color:  #FDFCF8;
+    font-family: 'Marmelad';
+}
+#head{
+    padding-top:20px;
+    padding-left: 15px;
+    font-family: 'Marmelad';
+    
+}
+#first{
+    padding-top: px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Marmelad';
+}
+#second{
+    padding-top: px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Marmelad';
+}
+.search-container{
+    margin:50px auto;
+    width: 600px;
+    height:60px;
+    background-color: #EFEDE5;
+    border-radius: 20px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;  
+}
+#search-form{
+    display:flex;
+    border: none;
+    font-family: 'Marmelad';
+}
+#search-input{
+    padding:10px;
+    border: none;
+   background-color:#EFEDE5;
+   flex:1;
+   border: none;
+}
+#search-button{
+    padding: 10px 20px;
+    border-radius: 14px;
+    font-size: 18px;
+    background-color:#1C1A1B;
+    color: #fff;
+    margin-right: 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Marmelad';
+}
+#container{
+    width: 65vw;
+    height: 45vh;
+    margin: 0 auto;
+    color: #f8e9be;
+    font-family: 'Marmelad';
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-template-rows: auto;
+    gap :12px;
+    grid-template-areas: 
+     " f nf bus bus trav"
+     "rom  rom bus bus hel"
+    ;
+}
+.item:hover{
+    color:#100f0f;
+    transform: scale(1.1);
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    text-align:center;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: large;
+    transition: transform 0.3s;
+    
+}
+.fiction{
+grid-area: f;
+background-color:#4B0082;
+position: relative;
+
+}
+.fiction img{
+
+position: absolute;
+bottom:0;
+left: 0;
+width: 45px;
+height: auto;
+}
+.nonfiction{
+    grid-area: nf;
+    background-color:#708090;
+    }
+.rom{
+    grid-area: rom;
+    background-color:#FFB6C1;
+}
+.travel{
+    grid-area: trav;
+    background-color:#87CEEB;
+}
+.health{
+    grid-area: hel;
+    background-color:#FF7F50;
+}
+.business{
+    grid-area: bus;    
+    background-color:#000080;
+}
